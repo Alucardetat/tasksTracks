@@ -1,0 +1,19 @@
+/* Style for the App component, applying general styling for the whole app */
+.App {
+    text-align: center; /* Centers the text inside the App component */
+    padding: 2rem; /* Adds 2rem of padding around the App component for spacing */
+  }
+  
+  /* Style for the form elements */
+  form {
+    margin-bottom: 2rem; /* Adds 2rem of space below the form for separation from other elements */
+  }
+  
+  /* Style for each task item in the list */
+  .task-item {
+    border: 1px solid #ccc; /* Creates a light gray border around each task item */
+    padding: 1rem; /* Adds 1rem of padding inside the task item for spacing around the content */
+    margin: 1rem 0; /* Adds 1rem of margin above and below each task item for spacing between items */
+    display: flex; /* Uses flexbox layout to arrange child elements in a flexible way */
+    justify-content: space-between; /* Distributes space between child elements, pushing them to opposite ends */
+  }  
