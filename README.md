@@ -29,6 +29,37 @@ Task Tracker is a simple task management application that allows users to create
 - **Database**: <!-- MongoDB -->
 - **Version Control**: <!-- Git and GitHub -->
 
+
+## Folder Structure
+
+```bash
+taskTracks/
+│
+├── backend/                     # Backend server files
+│   ├── models/                  # Mongoose models
+│   ├── routes/                  # Express routes
+│   ├── controllers/             # Business logic
+│   ├── config/                  # Configuration files (e.g., database)
+│   ├── middleware/              # Custom middleware (e.g., for CORS)
+│   ├── .env                     # Environment variables
+│   ├── server.js                # Main entry point for the server
+│   └── package.json             # Backend dependencies
+│
+├── frontend/                    # Frontend app files
+│   ├── public/                  # Static files (index.html)
+│   ├── src/                     # Source code for the frontend
+│   │   ├── components/          # React components
+│   │   │   ├── TaskForm.jsx     # Form for adding tasks
+│   │   │   ├── TaskItem.jsx     # Individual task item display
+│   │   │   └── TaskList.jsx     # List of tasks
+│   │   ├── App.jsx              # Main application component
+│   │   ├── App.css              # CSS styles for the app
+│   │   └── index.js             # Entry point for React app
+│   └── package.json             # Frontend dependencies
+└── README.md                    # Project documentation
+
+```
+
 ## Setup
 
 1. Clone the repository:
