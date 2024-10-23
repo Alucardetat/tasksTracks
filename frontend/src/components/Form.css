@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #071115;
+  background-color: #071115;
+  color: #aa00a4;
+}
+
+button {
+  cursor: pointer;
+  transition: all 200ms ease;
+  background-color: #071115;
+  color: #aa00a4;
+}
+
+button:hover {
+  background-color: #1b2f38;
+  transform: scale(1.1);
+}

@@ -1,19 +1,20 @@
 import React from 'react';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
+import "./App.css"
 
 const App = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-      <div style={{ width: '30%' }}>
+    <div className="sections">
+      <div className="newTasks">
         <h2>Add New Task</h2>
         <TaskForm />
       </div>
-      <div style={{ width: '30%' }}>
+      <div className="completeTasks">
         <h2>Completed Tasks</h2>
         <TaskList completed={true} /> {/* Display completed tasks */}
       </div>
-      <div style={{ width: '30%' }}>
+      <div className="incompleteTasks">
         <h2>Incomplete Tasks</h2>
         <TaskList completed={false} /> {/* Display incomplete tasks */}
       </div>
