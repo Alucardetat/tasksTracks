@@ -24,17 +24,21 @@ Task Tracker is a simple task management application that allows users to create
   - Team task metrics (collaborative performance without overshadowing personal metrics).
 
 ## Tech Stack
-- **Frontend**: <!-- React -->
-- **Backend**: <!-- Node.js (with future expansion to include additional frameworks and databases as needed) -->
-- **Database**: <!-- MongoDB -->
-- **Version Control**: <!-- Git and GitHub -->
+**To demomstrate CRUD I used the following:**
+- **M**ongoDB: The NoSQL database used to store and manage application data in a flexible, schema-less format.
+- **E**xpress.js: The lightweight and robust Node.js framework, designed for building fast, scalable APIs and server-side logic.
+- **R**eact: The powerful front-end JavaScript library used to create dynamic user interfaces and handle client-side interactions.
+- **N**ode.js: The high-performance, event-driven runtime environment that powers the server and facilitates seamless JavaScript execution across the stack.
+
+##
+- **Version Control**: GitHub, you silly. 
 
 ## Setup
 
 1. Clone the repository:
    ```bash
    git clone git@github.com:Alucardetat/tasksTracks.git
-   cd task-tracker
+   cd taskTracks
    ```
 
 2. Install dependencies:
@@ -42,12 +46,12 @@ Task Tracker is a simple task management application that allows users to create
    npm install
    ```
 
-3. Start the development server:
+4. Start the development server:
    ```bash
    npm start
    ```
 
-4. Access the app in your browser at `http://localhost:3000`.
+5. Access the app in your browser at `http://localhost:3000`.
 
 ## Contributing
 Feel free to submit issues or pull requests for bug fixes, features, or improvements.
