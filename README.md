@@ -1,5 +1,5 @@
 
-# TaskTracks
+# Task Tracker
 
 Task Tracker is a simple task management application that allows users to create, update, delete, and track their tasks. Designed with flexibility in mind, Task Tracker supports both personal task management and team collaboration, with planned features to expand functionality further.
 
@@ -24,21 +24,48 @@ Task Tracker is a simple task management application that allows users to create
   - Team task metrics (collaborative performance without overshadowing personal metrics).
 
 ## Tech Stack
-**To demomstrate CRUD I used the following:**
-- **M**ongoDB: The NoSQL database used to store and manage application data in a flexible, schema-less format.
-- **E**xpress.js: The lightweight and robust Node.js framework, designed for building fast, scalable APIs and server-side logic.
-- **R**eact: The powerful front-end JavaScript library used to create dynamic user interfaces and handle client-side interactions.
-- **N**ode.js: The high-performance, event-driven runtime environment that powers the server and facilitates seamless JavaScript execution across the stack.
+- **Frontend**: <!-- React -->
+- **Backend**: <!-- Node.js (with future expansion to include additional frameworks and databases as needed) -->
+- **Database**: <!-- MongoDB -->
+- **Version Control**: <!-- Git and GitHub -->
 
-##
-- **Version Control**: GitHub, you silly. 
+
+## Folder Structure
+
+```bash
+taskTracks/
+│
+├── backend/                     # Backend server files
+│   ├── models/                  # Mongoose models
+│   ├── routes/                  # Express routes
+│   ├── controllers/             # Business logic
+│   ├── config/                  # Configuration files (e.g., database)
+│   ├── middleware/              # Custom middleware (e.g., for CORS)
+│   ├── .env                     # Environment variables
+│   ├── server.js                # Main entry point for the server
+│   └── package.json             # Backend dependencies
+│
+├── frontend/                    # Frontend app files
+│   ├── public/                  # Static files (index.html)
+│   ├── src/                     # Source code for the frontend
+│   │   ├── components/          # React components
+│   │   │   ├── TaskForm.jsx     # Form for adding tasks
+│   │   │   ├── TaskItem.jsx     # Individual task item display
+│   │   │   └── TaskList.jsx     # List of tasks
+│   │   ├── App.jsx              # Main application component
+│   │   ├── App.css              # CSS styles for the app
+│   │   └── index.js             # Entry point for React app
+│   └── package.json             # Frontend dependencies
+└── README.md                    # Project documentation
+
+```
 
 ## Setup
 
 1. Clone the repository:
    ```bash
    git clone git@github.com:Alucardetat/tasksTracks.git
-   cd taskTracks
+   cd task-tracker
    ```
 
 2. Install dependencies:
@@ -46,12 +73,12 @@ Task Tracker is a simple task management application that allows users to create
    npm install
    ```
 
-4. Start the development server:
+3. Start the development server:
    ```bash
    npm start
    ```
 
-5. Access the app in your browser at `http://localhost:3000`.
+4. Access the app in your browser at `http://localhost:3000`.
 
 ## Contributing
 Feel free to submit issues or pull requests for bug fixes, features, or improvements.
