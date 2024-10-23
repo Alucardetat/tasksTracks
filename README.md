@@ -1,5 +1,5 @@
 
-# Task Tracker
+# TaskTracks
 
 Task Tracker is a simple task management application that allows users to create, update, delete, and track their tasks. Designed with flexibility in mind, Task Tracker supports both personal task management and team collaboration, with planned features to expand functionality further.
 
