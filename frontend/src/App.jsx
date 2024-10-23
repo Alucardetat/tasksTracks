@@ -1,15 +1,24 @@
-import React from 'react'; // Import React
-import TaskList from './components/TaskList'; // Import TaskList component
-import TaskForm from './components/TaskForm'; // Import TaskForm component
+import React from 'react';
+import TaskForm from './components/TaskForm';
+import TaskList from './components/TaskList';
 
 const App = () => {
   return (
-    <div>
-      <h1>Task Manager</h1> {/* Main heading */}
-      <TaskForm /> {/* Task input form */}
-      <TaskList /> {/* List of tasks */}
+    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <div style={{ width: '30%' }}>
+        <h2>Add New Task</h2>
+        <TaskForm />
+      </div>
+      <div style={{ width: '30%' }}>
+        <h2>Completed Tasks</h2>
+        <TaskList completed={true} /> {/* Display completed tasks */}
+      </div>
+      <div style={{ width: '30%' }}>
+        <h2>Incomplete Tasks</h2>
+        <TaskList completed={false} /> {/* Display incomplete tasks */}
+      </div>
     </div>
   );
 };
 
-export default App; // Export the App component
+export default App;
