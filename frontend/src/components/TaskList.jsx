@@ -6,13 +6,13 @@ const TaskList = ({ completed }) => {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const response = await fetch('http://localhost:5000/tasks'); // Adjust the URL as needed
-      const data = await response.json();
-      // Filter tasks based on completion status
-      setTasks(data.filter(task => task.completed === completed));
+        const response = await fetch('http://localhost:5000/tasks'); // Adjust the URL as needed
+        const data = await response.json();
+        // Filter tasks based on completion status
+        setTasks(data.filter(task => task.completed === completed));
     };
     fetchTasks();
-  }, [completed]);
+}, [completed]);
 
   return (
     <div>

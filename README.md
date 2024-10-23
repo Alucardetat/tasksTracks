@@ -65,7 +65,7 @@ taskTracks/
 1. Clone the repository:
    ```bash
    git clone git@github.com:Alucardetat/tasksTracks.git
-   cd task-tracker
+   cd taskTracks
    ```
 
 2. Install dependencies:

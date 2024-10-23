@@ -18,6 +18,7 @@ const TaskForm = () => {
       setTitle("");
       setDescription(""); // Reset description
       setDueDate(""); // Reset due date
+      // Optionally, trigger a re-fetch of tasks here
     }
   };
 

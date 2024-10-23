@@ -1,11 +1,11 @@
 const express = require('express'); // Import express
 const router = express.Router(); // Create a new router
-const Task = require('../models/Task'); // Import Task model
+const Task = require('../models/Task').default; // Import Task model
 
 // Create a new task
 router.post('/', async (req, res) => {
-    const { title } = req.body; // Get title from request body
-    const task = new Task({ title }); // Create a new task
+    const { title, description, dueDate } = req.body; // Get title, description, and due date from request body
+    const task = new Task({ title, description, dueDate }); // Create a new task
 
     try {
         await task.save(); // Save task to database
